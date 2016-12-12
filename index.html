@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Geemail : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Geemail</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CurtisKreidler/Geemail">View on GitHub</a>
+
+          <h1 id="project_title">Geemail</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/CurtisKreidler/Geemail/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/CurtisKreidler/Geemail/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="geemail" class="anchor" href="#geemail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Geemail</h1>
+
+<hr>
+
+<p>This project is a secure messaging client that is all run locally on one computer*.  This project uses the Crypto++ libary
+for its clean salsa20 stream cipher and sha256 implementations. For the database we used sqlite with a sqlite3(called Sqlite3PP) 
+wrapper class to simplify the DB read and writes</p>
+
+<p>*note that this must be run on an Unix based computer becuase of the use of the dev/urandom system file in order to
+compeletly randomly generate users salts based on the computers stored entropy. </p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>Clone the repository</li>
+<li>Install Crypto++ lib Instructions <a href="https://www.cryptopp.com/wiki/Linux">Here</a>
+</li>
+<li>Install sqlite3 with <code>sudo apt-get install sqlite3-dev</code>
+</li>
+<li>The wonderful wrapper class is already include Link to their git repo is <a href="https://github.com/iwongu/sqlite3pp">HERE</a>
+</li>
+<li>Compile by running the <code>make</code> command</li>
+<li>Run with <code>./geemail</code>
+</li>
+</ol>
+
+<h2>
+<a id="future-plans" class="anchor" href="#future-plans" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Future Plans</h2>
+
+<ul>
+<li>Make the Sala20 stream chiper IV dynamically generated to increase security</li>
+<li>Add in more error handling</li>
+</ul>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>Collaborators: Adam Karpowich and Mike Mizikar</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Geemail maintained by <a href="https://github.com/CurtisKreidler">CurtisKreidler</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

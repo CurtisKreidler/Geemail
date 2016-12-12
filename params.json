@@ -1,0 +1,6 @@
+{
+  "name": "Geemail",
+  "tagline": "",
+  "body": "# Geemail\r\n----\r\nThis project is a secure messaging client that is all run locally on one computer*.  This project uses the Crypto++ libary\r\nfor its clean salsa20 stream cipher and sha256 implementations. For the database we used sqlite with a sqlite3(called Sqlite3PP) \r\nwrapper class to simplify the DB read and writes\r\n\r\n*note that this must be run on an Unix based computer becuase of the use of the dev/urandom system file in order to\r\ncompeletly randomly generate users salts based on the computers stored entropy. \r\n\r\n## Installation\r\n\r\n1. Clone the repository\r\n2. Install Crypto++ lib Instructions [Here](https://www.cryptopp.com/wiki/Linux)\r\n3. Install sqlite3 with `sudo apt-get install sqlite3-dev`\r\n4. The wonderful wrapper class is already include Link to their git repo is [HERE](https://github.com/iwongu/sqlite3pp)\r\n5. Compile by running the `make` command\r\n5. Run with `./geemail`\r\n\r\n\r\n## Future Plans\r\n\r\n* Make the Sala20 stream chiper IV dynamically generated to increase security\r\n* Add in more error handling\r\n\r\n\r\n## Credits\r\n\r\nCollaborators: Adam Karpowich and Mike Mizikar\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
